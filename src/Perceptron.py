@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib as mtp
 
+
 class Perceptron(object):
     """Perceptron classifier
 
@@ -8,21 +9,21 @@ class Perceptron(object):
     ----------------
     eta: float
         Learning rate (0.0 - 1.0)
-    
+
     n_iter: int
         number of iterations
-    
+
     Attributes
     ----------------
     w_: ld-array
         weights of model
-    
+
     errors_: list
         num of misclassifications in every epoch
-    
+
     """
 
-    def __init__ (self, eta = 0.01, n_iter = 10):
+    def __init__(self, eta = 0.01, n_iter = 10):
         self.eta = eta
         self.n_iter = n_iter
 
@@ -33,7 +34,7 @@ class Perceptron(object):
         --------------
         X: {array-like}, shape = [n_samples, n_features]
             training vectors
-        
+
         Y: array like, shape = [n_samples]
             target values
 

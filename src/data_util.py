@@ -1,10 +1,12 @@
 import numpy as np
 import pandas as pd
-import sys,os
+import sys
+import os
 
-def read_data_file(data_file, data_folder = "../"):
+
+def read_data_file(data_file, data_folder="../"):
     """ Read data file into pandas data frame
-    :type data_file:string 
+    :type data_file:string
     :param data_file:name of file containing data in csv format
 
     :type data_folder:string
@@ -21,7 +23,7 @@ def read_data_file(data_file, data_folder = "../"):
 
 
 def main():
-    dt_frame = read_data_file("iris.data", "", """F:/Excelsior/PyML/code/data/iris/""" )
+    dt_frame = read_data_file("iris.data", """F:/Excelsior/PyML/code/data/iris/""" )
     print(dt_frame)
 
 if __name__ == '__main__':
